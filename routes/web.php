@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('kontak','Kontak');
+Route::resource('datadiri','Datadiri');
 
 Route::get('/pegawai', 'PegawaiController@index');
 Route::get('/pegawai/tambah', 'PegawaiController@tambah');

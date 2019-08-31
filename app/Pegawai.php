@@ -9,4 +9,9 @@ class Pegawai extends Model
     protected $table = "pegawai";
 
     protected $fillable = ['nama','alamat'];
+
+    public function datadiri()
+    {
+    	return $this->hasOne('App\MDatadiri');
+    }     
 }

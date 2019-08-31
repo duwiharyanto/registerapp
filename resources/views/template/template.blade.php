@@ -7,17 +7,39 @@
         <title>Tutorial Laravel #21 : CRUD Eloquent Laravel - www.malasngoding.com</title>
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="/">{{ucwords($config->headline)}}</a>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                    Logo
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/pegawai">Pegawai</a></li>
+                        <li><a href="/kontak">Kontak</a></li>
+                        <li><a href="/datadiri">Data Diri</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Merchandise</a></li>
+                                <li><a href="#">Extras</a></li>
+                                <li><a href="#">Media</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                </div>
             </div>
-            <ul class="nav navbar-nav">
-              <li><a href="/pegawai">Pegawai</a></li>
-              <li><a href="/kontak">Kontak</a></li>
-            </ul>
-          </div>
-        </nav>        
+        </nav>               
         <div class="container">
             <div class="row" style="margin-top: 50px">
                 <div class="col-sm-12">

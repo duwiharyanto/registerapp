@@ -29,7 +29,8 @@ class PegawaiController extends Controller
         $data=[
             'config'=>$this->config(),
             'pegawai'=>Pegawai::all()->sortByDesc('id'),
-        ];        
+        ];
+       // print_r($data['pegawai']);        
     	return view('pegawai', $data);
     }
 
