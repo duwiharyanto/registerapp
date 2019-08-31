@@ -7,10 +7,21 @@
         <title>Tutorial Laravel #21 : CRUD Eloquent Laravel - www.malasngoding.com</title>
     </head>
     <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="/">{{ucwords($config->headline)}}</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="/pegawai">Pegawai</a></li>
+              <li><a href="/kontak">Kontak</a></li>
+            </ul>
+          </div>
+        </nav>        
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-top: 50px">
                 <div class="col-sm-12">
-                    <br><br>
+
                     <div class="card-header text-center">
                         <h2>
                             {{ucwords($config->headline)}}    

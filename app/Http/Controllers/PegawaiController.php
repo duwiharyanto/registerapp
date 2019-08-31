@@ -12,7 +12,7 @@ class PegawaiController extends Controller
 
     public function config(){
         $data=[
-            'headline'=>'belajar laravel',
+            'headline'=>'daftar user',
             'title'=>'hello world',
         ];
         return (object)$data;

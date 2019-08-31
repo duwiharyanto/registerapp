@@ -12,7 +12,7 @@ class Kontak extends Controller
 
     public function config(){
         $data=[
-            'headline'=>'belajar laravel',
+            'headline'=>'daftar kontak user',
             'title'=>'hello world',
         ];
         return (object)$data;
